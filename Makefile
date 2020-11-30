@@ -42,8 +42,8 @@ SRC			= $(wildcard src/main.c \
 OBJ			= $(SRC:.c=.o)
 
 CFLAGS		= -W -Wall -Wextra -g3
-CPPFLAGS	= -I/usr/local/include
-LDFLAGS		= -L/usr/local/lib -lcsfml-window -lcsfml-graphics -lcsfml-system -lcsfml-audio
+CPPFLAGS	= -ISFML_lib/
+LDFLAGS		= -LSFML_lib/SFML -lcsfml-window -lcsfml-graphics -lcsfml-system -lcsfml-audio
 TARGET		= game
 
 all: 
